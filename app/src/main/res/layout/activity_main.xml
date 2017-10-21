@@ -88,29 +88,33 @@
             android:orientation="horizontal">
 
 
-            <Button
-                android:id="@+id/activity_main_btnKdvDahil"
+
+            <RadioGroup
+                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#1E2832"
-                android:text="@string/kdvdahil"
-                android:textAllCaps="false"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/activity_main_rbtnKdvDahil"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/kdvdahil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/activity_main_rbtnKdvHaric"
+
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/kdvharic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
 
-            <Button
-                android:textAllCaps="false"
+            </RadioGroup>
 
-                android:id="@+id/activity_main_btnKdvHaric"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#1E2832"
-                android:text="@string/kdvharic"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+
+
 
 
         </LinearLayout>
