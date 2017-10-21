@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KdvHesaplayici</string>
+    <string name="kdvdahil">Kdv Dahil Giriş</string>
+    <string name="kdvharic">Kdv Hariç Giriş</string>
+    <string name="kdvhesapla">KDV HESAPLAMA</string>
+    <string name="yuzde1">%1</string>
+    <string name="yuzde8">%8</string>
+    <string name="yuzde18">%18</string>
+    <string name="tutar">TUTAR</string>
+    <string name="tvkdvharic">KDV HARİÇ</string>
+    <string name="kdvtutari">KDV TUTARI</string>
+</resources>
