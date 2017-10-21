@@ -21,12 +21,54 @@
 
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frameLayout2"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/frameLayout2"
         android:layout_below="@+id/activity_main_tv"
-        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="14dp"
+        android:background="#1E2832">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/activity_main_rbtnKdvDahil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kdvdahil"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/activity_main_rbtnKdvHaric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kdvharic"
+                android:textColor="#FFFFFF" />
+
+
+        </RadioGroup>
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+
+        android:id="@+id/frameLayout1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
         android:background="#1E2832">
 
         <LinearLayout
@@ -70,65 +112,18 @@
 
         </LinearLayout>
 
-
     </FrameLayout>
 
-    <FrameLayout
-        android:id="@+id/frameLayout2"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/frameLayout"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:background="#1E2832">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-
-
-            <RadioGroup
-                 android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RadioButton
-                    android:id="@+id/activity_main_rbtnKdvDahil"
-                    android:layout_weight="1"
-                    android:textColor="#FFFFFF"
-                    android:text="@string/kdvdahil"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <RadioButton
-                    android:id="@+id/activity_main_rbtnKdvHaric"
-
-                    android:layout_weight="1"
-                    android:textColor="#FFFFFF"
-                    android:text="@string/kdvharic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-
-            </RadioGroup>
-
-
-
-
-
-        </LinearLayout>
-
-
-    </FrameLayout>
 
     <FrameLayout
+
         android:id="@+id/frameLayout3"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/frameLayout2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_below="@+id/frameLayout1"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
         android:background="#1E2832">
 
         <LinearLayout
@@ -138,26 +133,27 @@
 
 
             <TextView
+                android:paddingLeft="5dp"
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="#1E2832"
-                android:gravity="fill_vertical"
-                android:text="@string/tutar"
+                android:gravity="left|center_vertical"
+                 android:text="@string/tutar"
                 android:textColor="#8D99A5"
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
 
             <EditText
-                android:id="@+id/activity_main_etKdvTutari"
+                android:id="@+id/activity_main_etKdv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:inputType="numberSigned"
-                 android:background="#1E2832"
+                android:background="#1E2832"
                 android:gravity="right"
+                android:inputType="numberSigned"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
@@ -167,14 +163,16 @@
 
     </FrameLayout>
 
-
     <FrameLayout
+
         android:id="@+id/frameLayout4"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:background="#1E2832"
-        android:layout_below="@+id/frameLayout3"
-        android:layout_alignStart="@+id/frameLayout3">
+         android:layout_below="@+id/frameLayout3"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:background="#1E2832">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -183,14 +181,15 @@
 
 
             <TextView
+                android:paddingLeft="5dp"
                 android:id="@+id/activity_main_tvKdv"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_alignStart="@+id/frameLayout4"
                 android:layout_alignTop="@+id/frameLayout4"
                 android:layout_weight="1"
                 android:background="#1E2832"
-                android:gravity="fill_vertical"
+                android:gravity="left|fill_vertical"
                 android:text="@string/tvkdvharic"
                 android:textColor="#8D99A5"
                 android:textSize="20sp"
@@ -212,14 +211,17 @@
 
     </FrameLayout>
 
+
     <FrameLayout
+
+        android:id="@+id/frameLayout5"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/frameLayout4"
-        android:layout_below="@+id/frameLayout4"
-        android:layout_marginTop="5dp"
-        android:background="#1E2832"
-        android:id="@+id/frameLayout5">
+         android:layout_below="@+id/frameLayout4"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:background="#1E2832">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -228,9 +230,10 @@
 
 
             <TextView
+                android:paddingLeft="5dp"
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="#1E2832"
                 android:gravity="fill_vertical"
@@ -254,8 +257,6 @@
 
 
     </FrameLayout>
-
-
 
 
 </RelativeLayout>

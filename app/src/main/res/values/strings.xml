@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KdvHesaplayici</string>
+    <string name="app_name">Kdv Hesaplayıcı</string>
     <string name="kdvdahil">Kdv Dahil Giriş</string>
     <string name="kdvharic">Kdv Hariç Giriş</string>
     <string name="kdvhesapla">KDV HESAPLAMA</string>
@@ -9,4 +9,7 @@
     <string name="tutar">TUTAR</string>
     <string name="tvkdvharic">KDV HARİÇ</string>
     <string name="kdvtutari">KDV TUTARI</string>
+    <string name="kdvDahil">KDV DAHİL</string>
+    <string name="kdvHaric">KDV HARİÇ</string>
+    <string name="tutarGiriniz">Lütfen Tutar Giriniz</string>
 </resources>
