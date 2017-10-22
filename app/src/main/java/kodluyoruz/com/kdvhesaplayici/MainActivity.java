@@ -104,9 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     activity_main_tvkdvHaric.setText(number + kdv + " ");
                     activity_main_tvkdvTutari.setText(kdv + " ");
 
-
                 }
-
 
                 break;
             case R.id.activity_main_btnKdv18:
